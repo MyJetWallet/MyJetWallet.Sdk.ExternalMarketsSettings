@@ -149,7 +149,10 @@ namespace MyJetWallet.Sdk.ExternalMarketsSettings.Services
                     PriceAccuracy = e.Settings.PriceAccuracy,
                     VolumeAccuracy = e.Settings.VolumeAccuracy,
                     Active = e.Settings.Active,
-                    Levels = e.Settings.Levels
+                    Levels = e.Settings.Levels,
+                    AssociateInstrument = e.Settings.AssociateInstrument,
+                    AssociateBaseAsset = e.Settings.AssociateBaseAsset,
+                    AssociateQuoteAsset = e.Settings.AssociateQuoteAsset
                 }).ToDictionary(e => e.Market, e => e);
 
             lock (_sync)
