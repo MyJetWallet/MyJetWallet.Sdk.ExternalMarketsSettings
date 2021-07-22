@@ -88,6 +88,7 @@ namespace MyJetWallet.Sdk.ExternalMarketsSettings.Services
 
         public async Task UpdateExternalMarketSettings(ExternalMarketSettings settings)
         {
+            Console.WriteLine($"UpdateExternalMarketSettings !!!! {JsonConvert.SerializeObject(settings)}");
             using var action = MyTelemetry.StartActivity("Update External Market Settings");
             settings.AddToActivityAsJsonTag("settings");
             try
