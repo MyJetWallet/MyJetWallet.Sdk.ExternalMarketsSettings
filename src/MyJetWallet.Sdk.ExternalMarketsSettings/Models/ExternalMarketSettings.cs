@@ -14,6 +14,9 @@ namespace MyJetWallet.Sdk.ExternalMarketsSettings.Models
         [DataMember(Order = 6)] public int VolumeAccuracy { get; set; }
         [DataMember(Order = 7)] public string Levels { get; set; }
         [DataMember(Order = 8)] public bool Active { get; set; }
+        [DataMember(Order = 9)] public string AssociateInstrument { get; set; }
+        [DataMember(Order = 10)] public string AssociateBaseAsset { get; set; }
+        [DataMember(Order = 11)] public string AssociateQuoteAsset { get; set; }
 
         public double[] GetDoubleLevels()
         {
