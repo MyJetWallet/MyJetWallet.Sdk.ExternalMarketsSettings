@@ -13,6 +13,9 @@ namespace MyJetWallet.Sdk.ExternalMarketsSettings.Autofac
 
             builder.RegisterInstance(factory.GetMarketMakerSettingsManagerGrpc())
                 .As<IExternalMarketSettingsManagerGrpc>().SingleInstance();
+
+            builder.RegisterInstance(factory.GetMarketSettingAccessorGrpc())
+                .As<IExternalMarketSettingAccessorGrpc>().SingleInstance();
         }
     }
 }

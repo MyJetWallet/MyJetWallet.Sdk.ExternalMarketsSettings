@@ -24,5 +24,8 @@ namespace MyJetWallet.Sdk.ExternalMarketsSettings.Autofac
 
         public IExternalMarketSettingsManagerGrpc GetMarketMakerSettingsManagerGrpc() =>
             _channel.CreateGrpcService<IExternalMarketSettingsManagerGrpc>();
+
+        public IExternalMarketSettingAccessorGrpc GetMarketSettingAccessorGrpc() =>
+            _channel.CreateGrpcService<IExternalMarketSettingAccessorGrpc>();
     }
 }
